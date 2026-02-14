@@ -12,9 +12,15 @@
   <header>
     <div class="header-inner">
       <a href="index.html" class="logo">
+        <span class="logo-icon">⚡</span>
         <span class="logo-text">LASER<span>2</span>ETCH</span>
       </a>
-      <nav>
+      <button class="menu-toggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="main-nav">
         <a href="index.html" class="active">Home</a>
         <a href="machine.html">The Machine</a>
         <a href="process.html">Process</a>
@@ -120,10 +126,14 @@
         <p>Examples of deep-etched metal from the L2E system.</p>
       </div>
       <div class="gallery-grid">
-        <div class="gallery-item"><img src="images/etched-sign.jpg" alt="Deep etched stainless steel sign"></div>
-        <div class="gallery-item"><img src="images/machine.jpg" alt="L2E Machine"></div>
-        <div class="gallery-item"><img src="images/process.jpg" alt="Chemical etching process"></div>
-        <div class="gallery-item"><img src="images/deep-etched-logo.jpg" alt="Deep etched logo"></div>
+        <div class="gallery-item"><img src="images/Deep%20etched%20metal%20sign.jpg" alt="Deep etched stainless steel sign"></div>
+        <div class="gallery-item"><img src="images/Deep%20etched%20metal%20sign%20%281%29.jpg" alt="Deep etched metal sign"></div>
+        <div class="gallery-item"><img src="images/Deep%20etched%20metal%20sign%20%282%29.jpg" alt="Deep etched plaque"></div>
+        <div class="gallery-item"><img src="images/Deep%20etched%20metal%20sign%20%283%29.jpg" alt="Deep etched sign"></div>
+        <div class="gallery-item"><img src="images/chemical%20etching%20machine%20%281%29.jpg" alt="L2E Machine"></div>
+        <div class="gallery-item"><img src="images/chemical%20etching%20machine%20%282%29.jpg" alt="Chemical etching machine"></div>
+        <div class="gallery-item"><img src="images/etched%20stainless%20steel%20sign.jpg" alt="Etched stainless steel"></div>
+        <div class="gallery-item"><img src="images/chemical%20etched%20laser%20photo.jpg" alt="Chemical etched laser photo"></div>
       </div>
     </div>
   </section>
@@ -167,5 +177,13 @@
       </div>
     </div>
   </footer>
+
+  <script>
+    // Mobile menu toggle
+    document.querySelector('.menu-toggle').addEventListener('click', function() {
+      document.querySelector('.main-nav').classList.toggle('active');
+      this.classList.toggle('active');
+    });
+  </script>
 </body>
 </html>
